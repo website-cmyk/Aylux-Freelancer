@@ -24,7 +24,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 lg:py-32 bg-linear-to-br from-cyan-950 via-slate-900 to-black text-white overflow-hidden">
+    <section
+      id="contact"
+      className="py-24 lg:py-32 bg-linear-to-br from-cyan-950 via-slate-900 to-black text-white overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left: Content & Message */}
@@ -73,8 +76,15 @@ const Contact = () => {
                   <MdPhone className="w-6 h-6 text-cyan-400" />
                 </div>
                 <div>
-                  <p className="text-sm text-gray-400">Phone</p>
-                  <p className="text-lg font-medium">+61 4 1234 5678</p>
+                  <p className="text-sm text-gray-400">
+                    Whatsapp number (24/7)
+                  </p>
+                  <p className="text-lg font-medium">
+                    +61 402 432 903{" "}
+                    <span className="text-xs font-light leading-0">
+                      under country one number to all
+                    </span>
+                  </p>
                 </div>
               </div>
 
@@ -84,7 +94,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Email</p>
-                  <p className="text-lg font-medium">hello@aylux.com.au</p>
+                  <p className="text-lg font-medium">Info@aylux.com.au</p>
                 </div>
               </div>
 
@@ -94,7 +104,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Headquarters</p>
-                  <p className="text-lg font-medium">Sydney, Australia</p>
+                  <p className="text-lg font-medium">Melbourne, Australia</p>
                 </div>
               </div>
             </motion.div>

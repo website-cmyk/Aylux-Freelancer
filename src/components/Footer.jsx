@@ -12,7 +12,6 @@ const Footer = () => {
     { name: "Home", to: "home", offset: -80 },
     { name: "About Us", to: "about", offset: -80 },
     { name: "Our Services", to: "services", offset: -80 },
-    { name: "Global Network", to: "network", offset: -80 },
     { name: "Get in Touch", to: "contact", offset: 0 },
   ];
 
@@ -98,8 +97,8 @@ const Footer = () => {
             </div>
 
             <div className="text-sm">
-              <p>hello@aylux.com.au</p>
-              <p>+61 4 1234 5678</p>
+              <p>Info@aylux.com.au</p>
+              <p>+61 402 432 903</p>
             </div>
           </div>
         </div>

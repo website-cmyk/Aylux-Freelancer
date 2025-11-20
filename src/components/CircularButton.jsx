@@ -1,14 +1,14 @@
 import { FaArrowRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
-const CircularButton = ({ text }) => {
+const CircularButton = ({ text, border = true }) => {
   return (
     <motion.button
       initial="initial"
       whileHover="hover"
       whileTap="tap"
       variants={{
-        initial: { borderWidth: "1px" },
+        initial: { borderWidth: border ? "1px" : "0px" },
         hover: { borderWidth: "2px" },
         tap: { scale: 0.98 },
       }}

@@ -15,32 +15,36 @@ const BannerSlider = () => {
 
   const slides = [
     {
-      image: "/images/home/banner.jpg",
-      heading: "AYLUX.",
-      subheading: "Global Supply Chain. Done Right.",
+      image: "/images/home/spoons.jpg",
+      heading: "Aylux Focus",
+      subheading: "FMCG Sourcing and Import/Export (Food & Groceries)",
       description:
-        "Australian-headquartered | Strict compliance | Seamless trade in Medical Goods & FMCG between Australia and South Asia.",
+        "Sourcing the World's Finest. Quality Commodities for Every Market.",
+      alt: "Spoons with different legumes/grains",
     },
     {
-      image: "/images/home/banner2.jpg",
-      heading: "Connecting Markets",
-      subheading: "Specialists in Medical & FMCG Trade",
+      image: "/images/home/global.jpg",
+      heading: "Aylux Focus",
+      subheading: "Global Logistics and Supply Chain Management.",
       description:
-        "Our dynamic FMCG division is dedicated to facilitating the smooth trade of everyday consumer products.",
+        "Your Assurance in Global Trade. Seamless Logistics, Worldwide.",
+      alt: "Global Map with Planes, Ships, and Trucks",
     },
     {
-      image: "/images/home/banner3.jpg",
-      heading: "Your Strategic Trade Partner",
-      subheading: "From Compliance to Delivery",
+      image: "/images/home/medical.jpg",
+      heading: "Aylux Focus",
+      subheading: "Medical Goods Importation and Supply Chain.",
       description:
-        "We handle the complexity so you can focus on growth. Medical devices, pharmaceuticals, and FMCG — delivered with trust.",
+        "Protecting Health. Reliable Supply of Essential Medical Goods.",
+      alt: "Hands putting on medical gloves",
     },
     {
-      image: "/images/home/banner4.jpg",
-      heading: "Elevating Supply Chains",
-      subheading: "Trusted Experts in Medical & FMCG Logistics",
+      image: "/images/home/FMCG.jpg",
+      heading: "Aylux Focus",
+      subheading: "Australian Market Entry & FMCG Channel Access.",
       description:
-        "With AYLUX, experience a new standard in supply chain management tailored for the Medical and FMCG sectors.",
+        "From Warehouse to Aisle. Connecting Global Brands with Australian Consumers.",
+      alt: "Australian Market Entry and FMCG Channel Access",
     },
   ];
 
@@ -60,7 +64,10 @@ const BannerSlider = () => {
   };
 
   return (
-    <div id="home" className="relative w-full mt-[70px] h-[90dvh] md:h-[70dvh] overflow-hidden">
+    <div
+      id="home"
+      className="relative w-full mt-[70px] h-[600px] md:h-[1000px] overflow-hidden"
+    >
       <Swiper
         modules={[Autoplay, EffectFade]}
         spaceBetween={0}
@@ -87,7 +94,7 @@ const BannerSlider = () => {
                 alt={slide.heading}
                 fill
                 priority={index === 0}
-                className="object-cover"
+                className="object-center object-cover w-full h-full"
                 quality={95}
               />
             </div>

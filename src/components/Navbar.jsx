@@ -14,7 +14,6 @@ const Navbar = () => {
     { name: "Home", to: "home" },
     { name: "About Us", to: "about" },
     { name: "Services", to: "services" },
-    { name: "Network", to: "explore" },
   ];
 
   return (
@@ -58,7 +57,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <Link to="contact" smooth={true} duration={600} offset={-80}>
-                <CircularButton text="Contact Us" />
+                <CircularButton text="Contact Us" border={false} />
               </Link>
             </div>
 

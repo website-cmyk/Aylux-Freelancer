@@ -68,14 +68,13 @@ const Services = () => {
             Our Core Services
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            End-to-end trade solutions built on{" "}
-            <span className="text-cyan-600 font-semibold">compliance</span>,{" "}
-            <span className="text-cyan-600 font-semibold">reliability</span>,
-            and{" "}
-            <span className="text-cyan-600 font-semibold">
-              market intelligence
-            </span>
-            .
+            To be the{" "}
+            <span className="text-cyan-600 font-semibold">trusted</span>,{" "}
+            <span className="text-cyan-600 font-semibold">reliable</span>, and{" "}
+            <span className="text-cyan-600 font-semibold">efficient link</span>
+            in the global supply chain, ensuring uninterrupted access to quality
+            medical and consumer products across Australia and South Asian
+            markets.
           </p>
         </motion.div>
 
@@ -92,7 +91,7 @@ const Services = () => {
               key={index}
               variants={cardVariants}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
-              className={`group bg-white rounded-3xl shadow-lg ${service.hover} transition-all duration-300 overflow-hidden`}
+              className={`group bg-white rounded-3xl shadow-lg ${service.hover} transition-all duration-300 overflow-hidden relative pb-[70px]`}
             >
               {/* Header */}
               <div className={`bg-linear-to-r ${service.color} p-8 text-white`}>
@@ -113,7 +112,7 @@ const Services = () => {
               </div>
 
               {/* Footer CTA */}
-              <div className="px-8 pb-8">
+              <div className="absolute bottom-6 right-6 ">
                 <div className="flex justify-end">
                   <CircularButton text="Learn More" size="sm" />
                 </div>

@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { MdHealthAndSafety, MdStorefront, MdPublic } from "react-icons/md";
 import CircularButton from "./CircularButton";
+import { Link } from "react-scroll";
 
 const Services = () => {
   const services = [
@@ -114,7 +115,9 @@ const Services = () => {
               {/* Footer CTA */}
               <div className="absolute bottom-6 right-6 ">
                 <div className="flex justify-end">
-                  <CircularButton text="Learn More" size="sm" />
+                  <Link to="contact" smooth={true} duration={600}>
+                    <CircularButton text="Learn More" size="sm" />
+                  </Link>
                 </div>
               </div>
             </motion.article>
@@ -122,7 +125,7 @@ const Services = () => {
         </motion.div>
 
         {/* Bottom CTA */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -133,7 +136,7 @@ const Services = () => {
             Ready to streamline your supply chain?
           </p>
           <CircularButton text="Partner with Aylux" />
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

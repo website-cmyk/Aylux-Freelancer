@@ -9,6 +9,7 @@ import "swiper/css/effect-fade";
 import Image from "next/image";
 import CircularButton from "./CircularButton";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const BannerSlider = () => {
   const swiperRef = useRef(null);
@@ -16,7 +17,7 @@ const BannerSlider = () => {
   const slides = [
     {
       image: "/images/home/spoons.jpg",
-      heading: "Aylux Focus",
+      heading: "Aylux",
       subheading: "FMCG Sourcing and Import/Export (Food & Groceries)",
       description:
         "Sourcing the World's Finest. Quality Commodities for Every Market.",
@@ -24,7 +25,7 @@ const BannerSlider = () => {
     },
     {
       image: "/images/home/global.jpg",
-      heading: "Aylux Focus",
+      heading: "Aylux",
       subheading: "Global Logistics and Supply Chain Management.",
       description:
         "Your Assurance in Global Trade. Seamless Logistics, Worldwide.",
@@ -32,7 +33,7 @@ const BannerSlider = () => {
     },
     {
       image: "/images/home/medical.jpg",
-      heading: "Aylux Focus",
+      heading: "Aylux",
       subheading: "Medical Goods Importation and Supply Chain.",
       description:
         "Protecting Health. Reliable Supply of Essential Medical Goods.",
@@ -40,7 +41,7 @@ const BannerSlider = () => {
     },
     {
       image: "/images/home/FMCG.jpg",
-      heading: "Aylux Focus",
+      heading: "Aylux",
       subheading: "Australian Market Entry & FMCG Channel Access.",
       description:
         "From Warehouse to Aisle. Connecting Global Brands with Australian Consumers.",
@@ -66,7 +67,7 @@ const BannerSlider = () => {
   return (
     <div
       id="home"
-      className="relative w-full mt-[70px] h-[600px] md:h-[1000px] overflow-hidden"
+      className="relative w-full mt-[70px] h-[400px] md:h-[1000px] overflow-hidden"
     >
       <Swiper
         modules={[Autoplay, EffectFade]}
@@ -103,14 +104,14 @@ const BannerSlider = () => {
             <div className="absolute inset-0 bg-black/50" />
 
             {/* Animated Content */}
-            <section className="relative z-10 h-full flex flex-col justify-center items-start px-2 md:px-16 max-w-7xl mx-auto text-white">
+            <section className="relative z-10 h-full flex flex-col justify-center items-start px-8 md:px-16 max-w-7xl mx-auto text-white">
               <motion.div
                 className="max-w-4xl space-y-2 md:space-y-8"
                 initial="hidden"
                 whileInView="visible"
                 exit="exit"
                 viewport={{ once: false }}
-                key={index} // This forces re-animation on slide change
+                key={index}
               >
                 <motion.h1
                   custom={0}
@@ -137,7 +138,9 @@ const BannerSlider = () => {
                 </motion.p>
 
                 <motion.div custom={3} variants={textVariants} className="h-18">
-                  <CircularButton text="Partner with us" />
+                  <Link to="contact" smooth={true} duration={600}>
+                    <CircularButton text="Partner with us" />
+                  </Link>
                 </motion.div>
               </motion.div>
             </section>

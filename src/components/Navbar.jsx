@@ -31,10 +31,10 @@ const Navbar = () => {
               className="cursor-pointer"
             >
               <Image
-                src="/Logo.png"
+                src="/ayluxLogo.png"
                 alt="Aylux Logo"
-                width={150}
-                height={70}
+                width={160}
+                height={100}
                 className="object-contain"
                 priority
               />

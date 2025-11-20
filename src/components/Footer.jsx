@@ -37,13 +37,13 @@ const Footer = () => {
             transition={{ duration: 0.7 }}
             className="space-y-6"
           >
-            <div className="flex items-center">
+            <div className="">
               <Image
-                src="/Logo.jpg"
+                src="/ayluxLogo.png"
                 alt="Aylux Pvt Ltd"
-                width={160}
-                height={40}
-                className="object-contain"
+                width={240}
+                height={100}
+                className="object-center object-contain"
               />
             </div>
             <p className="text-sm leading-relaxed max-w-xs">

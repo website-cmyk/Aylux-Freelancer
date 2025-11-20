@@ -24,31 +24,30 @@ const InsightsSlider = () => {
 
   const imageArray = [
     {
-      imgSrc: "/images/placeholders/Picture2.jpg",
+      imgSrc: "/images/insights/everydayEssentials.png",
+      alt: "Everyday Essentials",
     },
     {
-      imgSrc: "/images/placeholders/Picture6.jpg",
+      imgSrc: "/images/insights/globalConnectivity.png",
+      alt: "Global Connectivity",
     },
     {
-      imgSrc: "/images/placeholders/mountain.jpg",
+      imgSrc: "/images/insights/hardwareBuilding.png",
+      alt: "Hardware Building",
     },
     {
-      imgSrc: "/images/placeholders/camera.jpg",
+      imgSrc: "/images/insights/marketAccess.png",
+      alt: "Market Access",
     },
     {
-      imgSrc: "/images/placeholders/earphones.jpg",
+      imgSrc: "/images/insights/medicalGoods.png",
+      alt: "Medical Goods",
     },
   ];
 
   return (
     <main className="py-10 flex flex-col justify-center max-w-7xl mx-auto">
       <section className="px-8">
-        <div className="mb-6">
-          <h3 className="text-3xl font-bold text-center md:text-left">
-            Insights & Updates
-          </h3>
-        </div>
-
         <div
           className="pb-4"
           onMouseEnter={handleMouseEnter}
@@ -79,13 +78,13 @@ const InsightsSlider = () => {
           >
             {imageArray.map((data, index) => (
               <SwiperSlide className="pb-10" key={index}>
-                <div className="w-full h-full cursor-grab">
-                  <div className="w-7xl h-[400px] relative">
+                <div className="w-full h-full cursor-grab shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)]">
+                  <div className="relative w-full h-64 md:h-80 lg:h-96">
                     <Image
                       src={data.imgSrc}
-                      alt={data.heading}
+                      alt={data.alt}
                       fill
-                      className="object-cover"
+                      className="object-contain object-center"
                     />
                   </div>
                 </div>

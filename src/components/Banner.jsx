@@ -94,7 +94,7 @@ const BannerSlider = () => {
                 src={slide.image}
                 alt={slide.heading}
                 fill
-                priority={index === 0}
+                priority
                 className="object-center object-cover w-full h-full"
               />
             </div>

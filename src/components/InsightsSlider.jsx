@@ -79,7 +79,7 @@ const InsightsSlider = () => {
             {imageArray.map((data, index) => (
               <SwiperSlide className="pb-10" key={index}>
                 <div className="w-full h-full cursor-grab shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)]">
-                  <div className="relative w-full h-64 md:h-80 lg:h-96">
+                  <div className="relative w-full h-28 md:h-80 lg:h-96">
                     <Image
                       src={data.imgSrc}
                       alt={data.alt}

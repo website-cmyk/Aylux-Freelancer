@@ -121,9 +121,7 @@ const Footer = () => {
           <p>
             © {new Date().getFullYear()} Aylux Pvt Ltd. All rights reserved.
           </p>
-          <p className="mt-4 md:mt-0">
-            Australian Registered • ABN{" "}
-            <div className="flex flex-col md:flex-row md:items-center gap-2">
+                      <div className="flex flex-col md:flex-row md:items-center gap-2">
             <p className="mt-4 md:mt-0">
               Australian Registered • ABN{" "}
               <span className="text-cyan-500">XX XXX XXX XXX</span>
@@ -139,8 +137,6 @@ const Footer = () => {
               </a>
             </p>
           </div>
-<span className="text-cyan-500">XX XXX XXX XXX</span>
-          </p>
         </div>
       </div>
     </footer>

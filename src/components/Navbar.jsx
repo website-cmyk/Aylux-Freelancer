@@ -97,7 +97,7 @@ const Navbar = () => {
               {/* Header */}
               <div className="flex items-center justify-between p-6 border-b">
                 <Image
-                  src="/Logo.jpg"
+                  src="/ayluxLogo.png"
                   alt="Aylux"
                   width={140}
                   height={60}

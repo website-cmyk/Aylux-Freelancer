@@ -123,7 +123,23 @@ const Footer = () => {
           </p>
           <p className="mt-4 md:mt-0">
             Australian Registered • ABN{" "}
-            <span className="text-cyan-500">XX XXX XXX XXX</span>
+            <div className="flex flex-col md:flex-row md:items-center gap-2">
+            <p className="mt-4 md:mt-0">
+              Australian Registered • ABN{" "}
+              <span className="text-cyan-500">XX XXX XXX XXX</span>
+            </p>
+            <p className="">
+              Design and Developed by{" "}
+              <a
+                href="https://www.saskasolutions.com"
+                target="_blank"
+                className="text-cyan-500 hover:underline"
+              >
+                SASKA Solutions
+              </a>
+            </p>
+          </div>
+<span className="text-cyan-500">XX XXX XXX XXX</span>
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { MdPhone, MdEmail, MdLocationOn } from "react-icons/md";
+import { MdEmail, MdLocationOn, MdPerson, MdWhatsapp } from "react-icons/md";
 import CircularButton from "./CircularButton";
 
 const Contact = () => {
@@ -73,15 +73,31 @@ const Contact = () => {
             <motion.div variants={itemVariants} className="space-y-6 pt-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center">
-                  <MdPhone className="w-6 h-6 text-cyan-400" />
+                  <MdPerson className="w-6 h-6 text-cyan-400" />
+                </div>
+                <div>
+                  <p className="text-sm text-gray-400">Janaka</p>
+                  <p className="text-lg font-medium">+61 402 432 903</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center">
+                  <MdPerson className="w-6 h-6 text-cyan-400" />
+                </div>
+                <div>
+                  <p className="text-sm text-gray-400">Devaka</p>
+                  <p className="text-lg font-medium">+61 437 416 493</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center">
+                  <MdWhatsapp className="w-6 h-6 text-cyan-400" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">
                     Whatsapp number (24/7)
                   </p>
-                  <p className="text-lg font-medium">
-                    +61 402 432 903
-                  </p>
+                  <p className="text-lg font-medium">+94 722 926 615</p>
                 </div>
               </div>
 

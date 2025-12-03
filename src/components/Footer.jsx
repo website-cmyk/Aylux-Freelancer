@@ -111,7 +111,9 @@ const Footer = () => {
 
             <div className="text-sm">
               <p>Info@aylux.com.au</p>
-              <p>+61 402 432 903</p>
+              <p>+61 402 432 903 (Janaka) </p>
+              <p>+61 437 416 493 (Devaka) </p>
+              <p>+94 722 926 615 (Whatsapp 24/7)</p>
             </div>
           </div>
         </div>
@@ -121,7 +123,7 @@ const Footer = () => {
           <p>
             © {new Date().getFullYear()} Aylux Pvt Ltd. All rights reserved.
           </p>
-                      <div className="flex flex-col md:flex-row md:items-center gap-2">
+          <div className="flex flex-col md:flex-row md:items-center gap-2">
             <p className="mt-4 md:mt-0">
               Australian Registered • ABN{" "}
               <span className="text-cyan-500">XX XXX XXX XXX</span>

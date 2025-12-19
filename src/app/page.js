@@ -11,8 +11,8 @@ export const metadata = {
     "Australian-headquartered import-export specialists in Medical Goods (TGA compliant) and Fast-Moving Consumer Goods (FMCG). Seamless trade between Australia, Sri Lanka, Malaysia, USA, Canada & South Asia.",
   keywords:
     "medical goods import Australia, FMCG export South Asia, TGA compliance Australia, Australian medical supplier, FMCG trade Australia, import export Australia South Asia, medical devices Australia, consumer goods logistics",
-  authors: [{ name: "Aylux Pvt Ltd" }],
-  publisher: "Aylux Pvt Ltd",
+  authors: [{ name: "AYLUX PTY LTD" }],
+  publisher: "AYLUX PTY LTD",
   alternates: {
     canonical: "https://www.aylux.com.au",
   },

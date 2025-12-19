@@ -56,7 +56,7 @@ const Contact = () => {
               <span className="text-cyan-400 font-semibold">brand</span> seeking
               reliable export to South Asia —{" "}
               <span className="text-white font-bold">
-                Aylux Pvt Ltd is your trusted partner
+                Aylux PTY LTD is your trusted partner
               </span>
               .
             </motion.p>
@@ -95,7 +95,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">
-                    Whatsapp number (24/7)
+                    WhatsApp number (24/7)
                   </p>
                   <p className="text-lg font-medium">+94 722 926 615</p>
                 </div>
@@ -139,19 +139,19 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Your Name."
                   className="w-full px-5 py-4 bg-white/10 border border-white/30 rounded-xl placeholder-gray-400 focus:outline-none focus:border-cyan-400 transition"
                 />
                 <input
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="Your Email."
                   className="w-full px-5 py-4 bg-white/10 border border-white/30 rounded-xl placeholder-gray-400 focus:outline-none focus:border-cyan-400 transition"
                 />
               </div>
 
               <input
                 type="text"
-                placeholder="Company (Optional)"
+                placeholder="Company (Optional)."
                 className="w-full px-5 py-4 bg-white/10 border border-white/30 rounded-xl placeholder-gray-400 focus:outline-none focus:border-cyan-400 transition"
               />
 

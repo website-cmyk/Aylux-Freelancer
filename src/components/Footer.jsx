@@ -121,7 +121,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
           <p>
-            © {new Date().getFullYear()} Aylux Pvt Ltd. All rights reserved.
+            © {new Date().getFullYear()} Aylux PTY LTD. All rights reserved.
           </p>
           <div className="flex flex-col md:flex-row md:items-center gap-2">
             <p className="mt-4 md:mt-0">

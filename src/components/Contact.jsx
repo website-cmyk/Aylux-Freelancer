@@ -56,7 +56,7 @@ const Contact = () => {
               <span className="text-cyan-400 font-semibold">brand</span> seeking
               reliable export to South Asia —{" "}
               <span className="text-white font-bold">
-                Aylux PTY LTD is your trusted partner
+                AYLUX PTY LTD is your trusted partner
               </span>
               .
             </motion.p>

@@ -40,7 +40,7 @@ const AboutUs = () => {
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Welcome to{" "}
-            <span className="text-cyan-600 font-semibold">Aylux Pvt Ltd</span> —
+            <span className="text-cyan-600 font-semibold">AYLUX PTY LTD</span> —
             a globally connected, Australian-registered import-export powerhouse
             built on trust, compliance, and seamless trade.
           </p>

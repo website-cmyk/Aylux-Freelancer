@@ -2,7 +2,12 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { MdHealthAndSafety, MdStorefront, MdPublic } from "react-icons/md";
+import {
+  MdHealthAndSafety,
+  MdStorefront,
+  MdPublic,
+  MdApartment,
+} from "react-icons/md";
 import CircularButton from "./CircularButton";
 import { Link } from "react-scroll";
 
@@ -35,6 +40,17 @@ const Services = () => {
       color: "from-indigo-500 to-purple-600",
       hover: "hover:shadow-indigo-500/25",
     },
+    {
+      icon: MdApartment,
+      emoji: "Property Maintenance",
+      title: "Body Corporate & OC Maintenance",
+      description:
+        "Reliable maintenance, repairs and ongoing property care for body corporates and owners corporations.",
+      color: "from-blue-500 to-pink-600",
+      hover: "hover:shadow-pink-500/25",
+      href: "/docs/aylux-property-maintenance.pdf",
+      download: true,
+    },
   ];
 
   const containerVariants = {
@@ -56,7 +72,7 @@ const Services = () => {
 
   return (
     <section id="services" className="py-20 lg:py-28">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-screen-2xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -69,13 +85,8 @@ const Services = () => {
             Our Core Services
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            To be the{" "}
-            <span className="text-cyan-600 font-semibold">trusted</span>,{" "}
-            <span className="text-cyan-600 font-semibold">reliable</span>, and{" "}
-            <span className="text-cyan-600 font-semibold">efficient link</span>{" "}
-            in the global supply chain, ensuring uninterrupted access to quality
-            medical and consumer products across Australia and South Asian
-            markets.
+            Reliable solutions across medical imports, FMCG market access,
+            international trade and property maintenance.
           </p>
         </motion.div>
 
@@ -85,40 +96,49 @@ const Services = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10"
         >
           {services.map((service, index) => (
             <motion.article
               key={index}
               variants={cardVariants}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
-              className={`group bg-white rounded-3xl shadow-lg ${service.hover} transition-all duration-300 overflow-hidden relative pb-[70px]`}
+              className={`group bg-white rounded-3xl shadow-lg ${service.hover} transition-all duration-300 overflow-hidden flex flex-col h-full`}
             >
               {/* Header */}
               <div className={`bg-linear-to-r ${service.color} p-8 text-white`}>
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-left gap-2 mb-4">
                   <service.icon className="w-12 h-12" />
-                  <span className="text-4xl">{service.emoji}</span>
+                  <span className="text-[22px] font-semibold">{service.emoji}</span>
                 </div>
-                <h3 className="text-2xl font-bold leading-tight">
+                <h3 className="text-lg font-bold leading-tight">
                   {service.title}
                 </h3>
               </div>
 
               {/* Body */}
-              <div className="p-8 space-y-4">
+              <div className="p-8 space-y-4 flex-1">
                 <p className="text-gray-700 leading-relaxed text-lg">
                   {service.description}
                 </p>
               </div>
 
               {/* Footer CTA */}
-              <div className="absolute bottom-6 right-6 ">
-                <div className="flex justify-end">
+              <div className="px-8 pb-8 flex justify-end">
+                {service.href ? (
+                  <a
+                    href={service.href}
+                    download={service.download}
+                    target={service.download ? undefined : "_blank"}
+                    rel="noopener noreferrer"
+                  >
+                    <CircularButton text="Learn More" size="sm" />
+                  </a>
+                ) : (
                   <Link to="contact" smooth={true} duration={600}>
                     <CircularButton text="Learn More" size="sm" />
                   </Link>
-                </div>
+                )}
               </div>
             </motion.article>
           ))}

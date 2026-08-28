@@ -16,6 +16,11 @@ const BannerSlider = () => {
 
   const slides = [
     {
+      image: "/images/home/property-maintenance.png",
+      alt: "Property Maintenance Solutions for Body Corporates & Owners Corporations",
+      imageOnly: true,
+    },
+    {
       image: "/images/home/medical.jpg",
       heading: "Aylux",
       subheading: "Medical Goods Importation and Supply Chain.",
@@ -92,57 +97,69 @@ const BannerSlider = () => {
             <div className="absolute inset-0">
               <Image
                 src={slide.image}
-                alt={slide.heading}
+                alt={slide.alt || slide.heading}
                 fill
                 priority
-                className="object-center object-cover w-full h-full"
+                className={
+                  slide.imageOnly
+                    ? "object-center object-contain w-full h-full bg-white"
+                    : "object-center object-cover w-full h-full"
+                }
               />
             </div>
 
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/50" />
+            {!slide.imageOnly && (
+              <>
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 bg-black/50" />
 
-            {/* Animated Content */}
-            <section className="relative z-10 h-full flex flex-col justify-center items-start px-8 md:px-16 max-w-7xl mx-auto text-white">
-              <motion.div
-                className="max-w-4xl space-y-2 md:space-y-8"
-                initial="hidden"
-                whileInView="visible"
-                exit="exit"
-                viewport={{ once: false }}
-                key={index}
-              >
-                <motion.h1
-                  custom={0}
-                  variants={textVariants}
-                  className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight"
-                >
-                  {slide.heading}
-                </motion.h1>
+                {/* Animated Content */}
+                <section className="relative z-10 h-full flex flex-col justify-center items-start px-8 md:px-16 max-w-7xl mx-auto text-white">
+                  <motion.div
+                    className="max-w-4xl space-y-2 md:space-y-8"
+                    initial="hidden"
+                    whileInView="visible"
+                    exit="exit"
+                    viewport={{ once: false }}
+                    key={index}
+                  >
+                    <motion.h1
+                      custom={0}
+                      variants={textVariants}
+                      className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight"
+                    >
+                      {slide.heading}
+                    </motion.h1>
 
-                <motion.p
-                  custom={1}
-                  variants={textVariants}
-                  className="text-xl md:text-3xl font-semibold"
-                >
-                  {slide.subheading}
-                </motion.p>
+                    <motion.p
+                      custom={1}
+                      variants={textVariants}
+                      className="text-xl md:text-3xl font-semibold"
+                    >
+                      {slide.subheading}
+                    </motion.p>
 
-                <motion.p
-                  custom={2}
-                  variants={textVariants}
-                  className="text-base md:text-xl max-w-3xl leading-relaxed text-white/90"
-                >
-                  {slide.description}
-                </motion.p>
+                    <motion.p
+                      custom={2}
+                      variants={textVariants}
+                      className="text-base md:text-xl max-w-3xl leading-relaxed text-white/90"
+                    >
+                      {slide.description}
+                    </motion.p>
 
-                <motion.div custom={3} variants={textVariants} className="h-18">
-                  <Link to="contact" smooth={true} duration={600}>
-                    <CircularButton text="Partner with us" />
-                  </Link>
-                </motion.div>
-              </motion.div>
-            </section>
+                    <motion.div
+                      custom={3}
+                      variants={textVariants}
+                      className="h-18"
+                    >
+                      <Link to="contact" smooth={true} duration={600}>
+                        <CircularButton text="Partner with us" />
+                      </Link>
+                    </motion.div>
+                  </motion.div>
+                </section>
+              </>
+            )}
           </SwiperSlide>
         ))}
       </Swiper>

@@ -49,7 +49,6 @@ const Services = () => {
       color: "from-blue-500 to-pink-600",
       hover: "hover:shadow-pink-500/25",
       href: "/docs/aylux-property-maintenance.pdf",
-      download: true,
     },
   ];
 
@@ -126,12 +125,7 @@ const Services = () => {
               {/* Footer CTA */}
               <div className="px-8 pb-8 flex justify-end">
                 {service.href ? (
-                  <a
-                    href={service.href}
-                    download={service.download}
-                    target={service.download ? undefined : "_blank"}
-                    rel="noopener noreferrer"
-                  >
+                  <a href={service.href} target="_blank" rel="noopener noreferrer">
                     <CircularButton text="Learn More" size="sm" />
                   </a>
                 ) : (

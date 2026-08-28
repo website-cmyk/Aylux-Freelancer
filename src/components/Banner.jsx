@@ -170,7 +170,7 @@ const BannerSlider = () => {
           <button
             key={index}
             onClick={() => swiperRef.current?.swiper.slideToLoop(index)}
-            className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white/40 transition-all duration-300 hover:bg-white/80"
+            className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-black/50 transition-all duration-300 hover:bg-white/80"
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

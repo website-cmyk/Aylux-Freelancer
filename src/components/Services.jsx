@@ -108,7 +108,7 @@ const Services = () => {
               <div className={`bg-linear-to-r ${service.color} p-8 text-white`}>
                 <div className="flex items-center justify-left gap-2 mb-4">
                   <service.icon className="w-12 h-12" />
-                  <span className="text-[22px] font-semibold">{service.emoji}</span>
+                  <h4 className="text-[22px] font-semibold">{service.emoji}</h4>
                 </div>
                 <h3 className="text-lg font-bold leading-tight">
                   {service.title}
@@ -126,7 +126,7 @@ const Services = () => {
               <div className="px-8 pb-8 flex justify-end">
                 {service.href ? (
                   <a href={service.href} target="_blank" rel="noopener noreferrer">
-                    <CircularButton text="Learn More" size="sm" />
+                    <CircularButton className="text-[14px]!" text="Download Brochure (PDF)" size="xs" />
                   </a>
                 ) : (
                   <Link to="contact" smooth={true} duration={600}>

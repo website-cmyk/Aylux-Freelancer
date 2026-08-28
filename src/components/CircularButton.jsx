@@ -1,7 +1,7 @@
 import { FaArrowRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
-const CircularButton = ({ text}) => {
+const CircularButton = ({ text, className }) => {
   return (
     <motion.button
       initial="initial"
@@ -11,7 +11,7 @@ const CircularButton = ({ text}) => {
         tap: { scale: 0.98 },
       }}
       transition={{ duration: 0.2, ease: "easeInOut" }}
-      className="z-10 bg-white rounded-full relative cursor-pointer"
+      className={`z-10 bg-white rounded-full relative cursor-pointer ${className}`}
     >
       <motion.p
         variants={{
